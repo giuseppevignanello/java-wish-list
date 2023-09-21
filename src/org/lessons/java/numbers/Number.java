@@ -15,7 +15,12 @@ public class Number {
 	}
 	
 	boolean hasElements() {
-		return true;
+		if(numbersArray.length > numberInvocations) {
+			return true;
+		} else {
+			return false;
+		}
+		
 	}
 	public int[] getNumbersArray() {
 		return numbersArray;
