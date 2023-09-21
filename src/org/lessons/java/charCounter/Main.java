@@ -19,7 +19,7 @@ public class Main {
 				stop = true;
 			} else {
 				for (int i = 0; i < userString.length(); i++) {
-					char userStringChar = userString.toLowerCase().charAt(i);
+					char userStringChar = userString.charAt(i);
 					if (charCounter.containsKey(userStringChar)) {
 						charCounter.put(userStringChar, charCounter.get(userStringChar) + 1);
 					} else {
@@ -27,11 +27,14 @@ public class Main {
 					}
 
 				}
-				System.out.println(charCounter);
-				 charCounter.clear(); 
+				for(Character k : charCounter.keySet()) {
+					Integer v = charCounter.get(k);
+					System.out.println(k + ": " + v);
+				}
+				
+				charCounter.clear();
 
 			}
-			
 			
 		}
 		System.out.println("STOPPED");
