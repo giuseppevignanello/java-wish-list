@@ -6,10 +6,13 @@ public class Main {
 		int[] numberArray = {1, 5, 6, 7, 9};
 		Number numbers = new Number (numberArray) ;
 		
+		numbers.addElement(4);
+		
 		while (numbers.hasElements()) {
 			System.out.println(numbers.getNextElement());
 		}
 		System.out.println("-------------------");
+		
 		Number numbers2 = new Number();
 		numbers2.addElement(5);
 		numbers2.addElement(9);

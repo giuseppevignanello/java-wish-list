@@ -27,10 +27,16 @@ public class Main {
 					}
 
 				}
-				for(Character k : charCounter.keySet()) {
-					Integer v = charCounter.get(k);
-					System.out.println(k + ": " + v);
-				}
+				
+				//with lambda functions 
+				charCounter.forEach((k, v) -> {
+					System.out.println(k + ":" + v);
+				});
+				
+//				for(Character k : charCounter.keySet()) {
+//					Integer v = charCounter.get(k);
+//					System.out.println(k + ": " + v);
+//				}
 				
 				charCounter.clear();
 
