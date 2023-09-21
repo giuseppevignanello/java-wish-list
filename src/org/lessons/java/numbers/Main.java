@@ -9,5 +9,14 @@ public class Main {
 		while (numbers.hasElements()) {
 			System.out.println(numbers.getNextElement());
 		}
+		System.out.println("-------------------");
+		Number numbers2 = new Number();
+		numbers2.addElement(5);
+		numbers2.addElement(9);
+		numbers2.addElement(3);
+		
+		while (numbers2.hasElements()) {
+			System.out.println(numbers2.getNextElement());
+		}
 	}
 }
